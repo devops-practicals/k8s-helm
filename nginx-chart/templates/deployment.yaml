@@ -28,4 +28,4 @@ spec:
       volumes:
         - name: nginx-index-file
           configMap:
-            name: {{ .Release.Name }}-index-html-configmap
+            name: "{{ .Values.env.name }}-{{ .Release.Name }}-index-html-configmap"
